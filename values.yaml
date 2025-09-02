@@ -1,4 +1,4 @@
-repository: mumoshu/actions-runner-controller-ci
+repository: jack-mumford/DOB-helm
 
 labels:
-  title: self-hosted
+  - self-hosted

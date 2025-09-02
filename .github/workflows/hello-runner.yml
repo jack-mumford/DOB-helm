@@ -1,0 +1,17 @@
+name: Hello on Self-Hosted Runner
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  hello:
+    runs-on:
+      - self-hosted
+      # If you add a unique label in your chart values (e.g., "dob-runner"),
+      # include it here as well to target only that runner:
+      # - dob-runner
+    steps:
+      - name: Say Hello
+        run: echo "Hello World"

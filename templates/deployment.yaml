@@ -6,4 +6,6 @@ spec:
   replicas: 1
   template:
     spec:
-      repository: mumoshu/actions-runner-controller-ci
+      repository: {{ .Values.repository }}
+      labels:
+        {{- toYaml .Values.labels | nindent 8 }}
