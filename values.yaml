@@ -1,0 +1,4 @@
+repository: mumoshu/actions-runner-controller-ci
+
+labels:
+  title: self-hosted
